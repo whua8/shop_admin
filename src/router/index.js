@@ -3,6 +3,11 @@ import Router from 'vue-router'
 import Login from '@/components/Login'
 import Home from '@/components/Home'
 import Users from '@/components/Users'
+import Rights from '@/components/Rights'
+import Roles from '@/components/Roles'
+import Categories from '@/components/Categories'
+import Goods from '@/components/Goods'
+import Add from '@/components/Add'
 
 Vue.use(Router)
 
@@ -24,12 +29,28 @@ const router = new Router({
         {
           path: '/users',
           component: Users
+        },
+        {
+          path: '/rights',
+          component: Rights
+        },
+        {
+          path: '/roles',
+          component: Roles
+        },
+        {
+          path: '/categories',
+          component: Categories
+        },
+        {
+          path: '/goods',
+          component: Goods
+        },
+        {
+          path: '/goods-add',
+          component: Add
         }
       ]
-    },
-    {
-      path: '/users',
-      component: Users
     }
   ]
 })
